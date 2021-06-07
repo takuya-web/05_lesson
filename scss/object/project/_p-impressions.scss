@@ -1,0 +1,77 @@
+.p-impressions {
+  padding: 64px 0;
+  background-color: #f7f7f7;
+
+  &__grid {
+    display: grid;
+    gap: 40px 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+  &__item {
+    padding: 20px;
+    display: block;
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+    line-height: 1.7;
+    &:hover {
+      background-color: #D4F1F8;
+      transition: all 0.5s ease;
+    }
+    &-top {
+      display: flex;
+      margin-bottom: 20.8px;
+    }
+    & img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+    & h5 {
+      font-size: 21px;
+      font-weight: bold;
+      padding-left: 20px;
+      line-height: 1.4;
+    }
+    & span {
+      display: block;
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 1.7;
+    }
+  }
+
+  &__next {
+    color: #2498BB;
+  }
+  &__next &__arrow {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    width: 10px;
+    height: 2px;
+    background-color: #2498BB;
+    position: relative;
+  }
+  &__next &__arrow:before,
+  &__next &__arrow:after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 2px;
+    background-color: #2498BB;
+    position: absolute;
+    right: -0.5px;
+  }
+  &__next &__arrow:before {
+    top: -3px;
+    transform: rotate(45deg);
+  }
+  &__next &__arrow:after {
+    bottom: -3px;
+    transform: rotate(-45deg);
+  }
+  &__message {
+    margin-bottom: 25px;
+  }
+}

@@ -1,0 +1,42 @@
+.p-news {
+  padding: 64px 0 0 0;
+
+  & h2 {
+    background-color: #2498b3;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    line-height: 1.0;
+  }
+
+  &__area {
+    font-size: 18px;
+    padding: 5px 20px;
+    border: 1px solid #c3c3c3;
+  }
+  &__area dt {
+    float: left;
+    margin: 0 40px 0 0;
+    padding: 20px 0;
+    color: #696969;
+  }
+  &__area dd {
+    padding: 20px 0;
+    color: #2498b3;
+  }
+  &__area dd a {
+    color: #2498b3;
+    text-decoration: none;
+  }
+  &__area dd:visited {
+    color: #2498b3;
+  }
+}
+
+#p-news {
+  &__01 ,&__02 {
+    border-bottom: 1px dotted #c3c3c3;
+  }
+}

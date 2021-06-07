@@ -1,0 +1,64 @@
+.p-service {
+  padding: 64px 0 0 0;
+  
+  & img {
+  max-width: 100%;
+  }
+}
+
+.p-service__area {
+  &-type1 {
+    display: flex;
+  }
+  &-type1-left {
+    width: 60%;
+  }
+  &-title {
+    font-size: 34px;
+    font-weight: bolder;
+    line-height: 1.5;
+  }
+  &-message {
+    line-height: 1.9;
+  }
+  &-type1-right {
+    width: 36%;
+    margin-left: 4%;
+    }
+
+  &-type2 {
+    display: flex;
+    margin: 48px 0 64px 0;
+    align-items: flex-end;
+    
+    &-left {
+      width: 36%;
+      margin-right: 4%;
+    }
+    &-right {
+      width: 60%;
+    }
+  }
+
+  &-type3 {
+    display: flex;
+    margin: 48px 0 0 0;
+    
+    &-left {
+      width: 60%;
+    }
+    &-right {
+      width: 36%;
+      margin-left: 4%;
+    }
+  }
+}
+
+#p-service__button {
+  &-java, &-job-support, &-manga, &-support {
+    margin: 16px 0 0 5px;
+  }
+  &-aws {
+    margin: 16px 0 0 15px;
+  }
+}

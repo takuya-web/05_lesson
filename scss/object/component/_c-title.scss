@@ -1,0 +1,25 @@
+.c-title {
+    font-size: 32px;
+    font-weight: 900;
+    text-align: center;
+    padding-bottom: 19.6px;
+
+  &__border {
+    position: relative;
+    width: 40px;
+    margin: 0 auto 48px auto;
+    transform: translateX(-50%);
+    border-bottom: 4px solid #2498B3;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
+  &__border::after {
+    position: absolute;
+    left: 41px;
+    content: "";
+    width: 40px;
+    border-bottom: 4px solid #A2D729;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
+}

@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+/* --------------------------------------------------------
+foundation
+-------------------------------------------------------- */
+@import "./foundation/reset";
+@import "./foundation/base";
+
+/* --------------------------------------------------------
+layout
+-------------------------------------------------------- */
+@import "./layout/l-header";
+@import "./layout/l-main";
+@import "./layout/l-footer";
+
+/* --------------------------------------------------------
+component
+-------------------------------------------------------- */
+@import "./object/component/c-button";
+@import "./object/component/c-title";
+@import "./object/component/c-arrow";
+
+/* --------------------------------------------------------
+project
+-------------------------------------------------------- */
+@import "./object/project/p-header";
+@import "./object/project/p-main-visual";
+@import "./object/project/p-banner";
+@import "./object/project/p-news";
+@import "./object/project/p-service";
+@import "./object/project/p-lesson-course";
+@import "./object/project/p-message";
+@import "./object/project/p-price";
+@import "./object/project/p-teacher";
+@import "./object/project/p-movie";
+@import "./object/project/p-impressions";
+@import "./object/project/p-footer";

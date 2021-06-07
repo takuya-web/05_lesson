@@ -1,0 +1,17 @@
+.p-banner {
+  height: 288.5px;
+  padding: 0 32px;
+  background-color: #D4F1F8;
+  display: flex;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    padding: 32px 0;
+  }
+  &__item img {
+    width: 539px;
+    object-fit: cover;
+    padding: 3px;
+  }
+}

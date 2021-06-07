@@ -1,0 +1,36 @@
+.p-teacher {
+	& {
+		background-color: #EAF8FB;
+		padding: 64px 0;
+	}
+}
+
+.p-teacher__content {
+	& {
+		display: flex;
+	}
+	&-left {
+		width: 52%;
+		padding: 0 5% 0 0;
+
+		& h5 {
+			font-size: 28px;
+			font-weight: 900;
+			padding: 0 0 14px 0;
+		}
+		& p {
+			padding: 0 0 32px 0;
+		}
+		& a {
+			line-height: 1.0;
+		}
+	}
+
+	&-right {
+		width: 43%;
+
+		& img {
+			width: 100%;
+		}
+	}
+}

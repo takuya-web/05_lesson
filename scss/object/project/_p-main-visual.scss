@@ -1,0 +1,112 @@
+.p-main-visual {
+  // 背景
+  height: 950px;
+  background-color: #000;
+  padding-top: 70px;
+
+  &__img {
+    position: relative;
+  }
+  &__img img {
+    position: absolute;
+    width: 100%;
+    height: 650px;
+    min-width: 100%;
+    object-fit: none;
+  }
+
+  // タイトル枠
+  &__title {
+    display: inline-block;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 327.34px;
+    width: 413.03px;
+    padding: 40px 30px 20px 30px;
+    z-index: 4;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+  }
+  &__title img {
+    width: 280px;
+  }
+  &__title p {
+    margin: 20.8px 0 8px 0;
+    line-height: 1.7;
+    font-weight: bold;
+  }
+  &__button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.0;
+    color: #fff;
+    background-color: #2498B3;
+    border-radius: 5px;
+    padding: 24px 37px;
+    margin-top: 23px;
+  }
+  &__features {
+    display: flex;
+    position: absolute;
+    top: 520px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 6;
+    width: 990px;
+  }
+  &__icon-block {
+    width: calc(100% / 3);
+  }
+  &__icon {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 8;
+    margin-top: -163px;
+  }
+  &__icon-frame {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 7;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    border: 6px solid #000;
+    background-color: #fff;  
+  }
+  &__content {
+    display: inline-block;
+    width: 230px;
+    margin-top: 75px;
+    color: #fff;
+    font-weight: bold;
+  }
+  &__content-title {
+    font-size: 24px
+  }
+  &__content-message {
+    margin-top: 15px;
+    text-align: left;
+    line-height: 1.7;
+  }
+}
+
+// 背景画像のz-index
+#p-main-visual {
+  &__img01 {
+    z-index: 3;
+  }
+  &__img02 {
+    z-index: 2;
+  }
+  &__img03 {
+    z-index: 1;
+  }
+}

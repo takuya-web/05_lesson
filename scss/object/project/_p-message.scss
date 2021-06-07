@@ -1,0 +1,24 @@
+.p-message {
+  background-color: #259db9;
+  max-height: 518px;
+  padding: 64px 0;
+  
+  &__wrapper {
+    max-width: 714px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  & h2 {
+    color: #fff;
+    font-size: 40px;
+    line-height: 1.4;
+    margin: 0 0 48px 0;
+  }
+  & p {
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.7;
+    text-align: left;
+    margin: 0 0 16px 0;
+  }
+}
