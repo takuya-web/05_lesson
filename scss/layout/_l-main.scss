@@ -10,3 +10,14 @@
 span {
   font-weight: bolder;
 }
+
+// レスポンシブ-xl
+@import "../foundation/responsive";
+
+@media (max-width: $xl) {
+  .l-main {
+    &__wrapper {
+      margin: 0 10px;
+    }
+  }
+}

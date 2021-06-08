@@ -504,6 +504,12 @@ span {
   font-weight: bolder;
 }
 
+@media (max-width: 1200px) {
+  .l-main__wrapper {
+    margin: 0 10px;
+  }
+}
+
 /* --------------------------------------------------------
 component
 -------------------------------------------------------- */
@@ -867,6 +873,16 @@ project
   padding: 3px;
 }
 
+@media (max-width: 1200px) {
+  .p-banner {
+    height: 100%;
+    padding: 5px;
+  }
+  .p-banner__item img {
+    width: 100%;
+  }
+}
+
 .p-news {
   padding: 64px 0 0 0;
 }
@@ -1068,7 +1084,7 @@ project
 }
 
 .p-message {
-  background-color: #259db9;
+  background-color: #27A4C2;
   max-height: 518px;
   padding: 64px 0;
 }
@@ -1100,6 +1116,7 @@ project
 
 .p-price__list {
   line-height: 2.0;
+  width: 100%;
 }
 
 .p-price__list tr th {
@@ -1113,8 +1130,15 @@ project
   font-weight: normal;
 }
 
+.p-price__border-bottom {
+  border-bottom: 5px solid #2498B3;
+  margin: 20px 0 0 0;
+  display: none;
+}
+
 .p-price__w1 {
-  width: 15.1%;
+  width: 15.2%;
+  min-width: 163px;
   height: 70px;
   background-color: #484b4b;
   border-right: 1px solid #484b4b !important;
@@ -1122,6 +1146,7 @@ project
 
 .p-price__w2 {
   width: 29.4%;
+  min-width: 294.55px;
   background-color: #2498B3;
   color: #fff;
   font-weight: bold;
@@ -1130,7 +1155,7 @@ project
 }
 
 .p-price__w3 {
-  width: 28.7%;
+  width: 27.7%;
   background-color: #484b4b;
   color: #fff;
   font-weight: bold;
@@ -1139,7 +1164,7 @@ project
 }
 
 .p-price__w4 {
-  width: 26.8%;
+  width: 27.7%;
   background-color: #484b4b;
   color: #fff;
   font-weight: bold;
@@ -1166,20 +1191,34 @@ project
 }
 
 .p-price__table__raisetech__min-text {
+  display: block;
   font-size: 14px;
+  line-height: 1.0;
 }
 
 .p-price__table__AandB-price {
   font-family: "Ropa Sans",sans-serif;
   font-size: 46px;
-  line-height: 1;
+  line-height: 1.6;
 }
 
 .p-price__table__tax {
+  display: block;
   font-family: none;
   font-size: 16px;
   color: #000;
-  vertical-align: top;
+  line-height: 1.6;
+  font-weight: normal;
+}
+
+.p-price__table-left {
+  font-weight: bold !important;
+}
+
+@media (max-width: 1200px) {
+  .p-price__border-bottom {
+    display: block;
+  }
 }
 
 .p-teacher {

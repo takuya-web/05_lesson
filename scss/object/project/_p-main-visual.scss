@@ -110,3 +110,10 @@
     z-index: 1;
   }
 }
+
+// レスポンシブ-xl
+@import "../../foundation/responsive";
+
+@media (max-width: $xl) {
+  
+}

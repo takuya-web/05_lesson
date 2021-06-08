@@ -4,6 +4,7 @@
   }
   &__list {
     line-height: 2.0;
+    width: 100%;
 
     & tr th {
       border: 1px solid #c3c3c3;
@@ -16,14 +17,22 @@
     }
   }
 
+  &__border-bottom {
+    border-bottom: 5px solid#2498B3;
+    margin: 20px 0 0 0;
+    display: none;
+  }
+
   &__w1 {
-    width: 15.1%;
+    width: 15.2%;
+    min-width: 163px;
     height: 70px;
     background-color: #484b4b;
     border-right:1px solid #484b4b !important;
   }
   &__w2 {
     width: 29.4%;
+    min-width: 294.55px;
     background-color: #2498B3;
     color: #fff;
     font-weight: bold;
@@ -31,7 +40,7 @@
     border-right:1px solid #484b4b !important;
   }
   &__w3 {
-    width: 28.7%;
+    width: 27.7%;
     background-color: #484b4b;
     color: #fff;
     font-weight: bold;
@@ -39,7 +48,7 @@
     border-right:1px solid #484b4b !important;
   }
   &__w4 {
-    width: 26.8%;
+    width: 27.7%;
     background-color: #484b4b;
     color: #fff;
     font-weight: bold;
@@ -68,20 +77,39 @@
       line-height: 1;
     }
     &__min-text {
+      display: block;
       font-size: 14px;
+      line-height: 1.0;
     }
   }
 
   &__AandB-price {
     font-family: "Ropa Sans",sans-serif;
     font-size: 46px;
-    line-height: 1;
+    line-height: 1.6;
   }
 
   &__tax {
+    display: block;
     font-family: none;
     font-size: 16px;
     color: #000;
-    vertical-align: top;
+    line-height: 1.6;
+    font-weight: normal;
+  }
+  &-left {
+    font-weight: bold !important;
+  }
+}
+
+// レスポンシブ-xl
+@import "../../foundation/responsive";
+
+@media (max-width: $xl) {
+    
+  .p-price {
+    &__border-bottom {
+      display: block;
+    }
   }
 }

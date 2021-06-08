@@ -1,0 +1,13 @@
+$md: 769px;
+$xl: 1200px;
+
+@mixin md($md) {
+  @media (min-width: ($md)) {
+    @content;
+  }
+}
+@mixin xl($xl) {
+  @media (min-width: ($xl)) {
+    @content;
+  }
+}
