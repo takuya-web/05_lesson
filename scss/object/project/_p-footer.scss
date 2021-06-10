@@ -60,3 +60,14 @@
     }
   }
 }
+
+// レスポンシブ-lg
+@import "../../foundation/responsive";
+
+@media (max-width: $lg) {
+  .p-footer {
+    &__wrapper {
+      padding: 40px 10px 30px 10px;
+    }
+  }
+}

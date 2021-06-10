@@ -16,10 +16,10 @@
   }
 }
 
-// レスポンシブ-xl
+// レスポンシブ-lg
 @import "../../foundation/responsive";
 
-@media (max-width: $xl) {
+@media (max-width: $lg) {
   .p-banner {
     height: 100%;
     padding: 5px;

@@ -58,7 +58,8 @@
     transform: translateX(-50%);
     text-align: center;
     z-index: 6;
-    width: 990px;
+    width: 100%;
+    max-width: 1078px;
   }
   &__icon-block {
     width: calc(100% / 3);
@@ -79,7 +80,7 @@
     height: 230px;
     border-radius: 50%;
     border: 6px solid #000;
-    background-color: #fff;  
+    background-color: #fff;
   }
   &__content {
     display: inline-block;
@@ -111,9 +112,15 @@
   }
 }
 
-// レスポンシブ-xl
+// レスポンシブ-lg
 @import "../../foundation/responsive";
 
-@media (max-width: $xl) {
-  
+@media (max-width: $lg) {
+  .p-main-visual {
+    padding: 50px 0 0 0;
+
+    & img {
+      
+    }
+  }
 }

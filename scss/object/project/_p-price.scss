@@ -102,10 +102,10 @@
   }
 }
 
-// レスポンシブ-xl
+// レスポンシブ-lg
 @import "../../foundation/responsive";
 
-@media (max-width: $xl) {
+@media (max-width: $lg) {
     
   .p-price {
     &__border-bottom {

@@ -491,6 +491,12 @@ layout
   background-color: #fff;
 }
 
+@media (max-width: 1200px) {
+  .l-header {
+    height: 50px;
+  }
+}
+
 .l-main {
   width: 100%;
 }
@@ -502,12 +508,6 @@ layout
 
 span {
   font-weight: bolder;
-}
-
-@media (max-width: 1200px) {
-  .l-main__wrapper {
-    margin: 0 10px;
-  }
 }
 
 /* --------------------------------------------------------
@@ -621,6 +621,76 @@ component
   transform: rotate(-45deg);
 }
 
+.c-hamburger {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .c-hamburger {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    position: relative;
+    display: block;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .c-hamburger::before, .c-hamburger::after {
+    content: "";
+    width: 23px;
+    height: 2px;
+    background: #2498B3;
+    position: absolute;
+    left: calc( 50% - ( 23px / 2));
+    display: block;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+  }
+  .c-hamburger::before {
+    top: 17px;
+  }
+  .c-hamburger::after {
+    top: 33px;
+  }
+  .c-hamburger > span {
+    width: 23px;
+    height: 2px;
+    font-size: 0;
+    background: -webkit-gradient(linear, left top, right top, from(#2498B3), to(#2498B3)) repeat-x #2498B3;
+    background: linear-gradient(to right, #2498B3, #2498B3) repeat-x #2498B3;
+    background-size: auto 2px;
+    position: absolute;
+    left: calc( 50% - ( 23px / 2 ));
+    top: 50%;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+  }
+  .c-hamburger.is-open {
+    background-color: #2498b3;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .c-hamburger.is-open::before {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: 25px;
+    background-color: #fff;
+  }
+  .c-hamburger.is-open::after {
+    -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+    top: 25px;
+    background-color: #fff;
+  }
+  .c-hamburger.is-open > span {
+    background: none;
+  }
+}
+
 /* --------------------------------------------------------
 project
 -------------------------------------------------------- */
@@ -719,6 +789,24 @@ project
   transition: all 0.5s ease;
 }
 
+@media (max-width: 1280px) {
+  .p-header__logo p {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .p-header__logo img {
+    width: 142.98px;
+  }
+  .p-header__logo p {
+    display: none;
+  }
+  .p-header__nav_list {
+    display: none;
+  }
+}
+
 .p-main-visual {
   height: 950px;
   background-color: #000;
@@ -788,7 +876,8 @@ project
           transform: translateX(-50%);
   text-align: center;
   z-index: 6;
-  width: 990px;
+  width: 100%;
+  max-width: 1078px;
 }
 
 .p-main-visual__icon-block {
@@ -845,6 +934,12 @@ project
 
 #p-main-visual__img03 {
   z-index: 1;
+}
+
+@media (max-width: 1200px) {
+  .p-main-visual {
+    padding: 50px 0 0 0;
+  }
 }
 
 .p-banner {
@@ -1479,5 +1574,11 @@ project
   font-weight: bold;
   margin-bottom: 10px;
   font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+  .p-footer__wrapper {
+    padding: 40px 10px 30px 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

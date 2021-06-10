@@ -8,3 +8,13 @@
   height: 70px;
   background-color: #fff;
 }
+
+// レスポンシブ-xl
+@import "../foundation/responsive";
+
+@media (max-width: $lg) {
+  .l-header {
+    height: 50px;
+    
+  }
+}

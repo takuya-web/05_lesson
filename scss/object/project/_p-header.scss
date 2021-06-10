@@ -89,3 +89,32 @@
     }
   }
 }
+
+
+// レスポンシブ
+@import "../../foundation/responsive";
+
+// xl
+@media (max-width: $xl) {
+  .p-header__logo p {
+    display: none;
+  }
+}
+
+// lg
+@media (max-width: $lg) {
+  .p-header__logo {
+    img {
+      width: 142.98px;
+    }
+    & p {
+      display: none;
+    }
+  }
+
+  .p-header__nav {
+    &_list {
+      display: none;
+    }
+  }
+}
