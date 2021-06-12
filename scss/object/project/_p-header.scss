@@ -25,11 +25,6 @@
 }
 
 .p-header__nav {
-  // & a {
-  //   display: flex;
-  //   align-items: center;
-  //   height: 70px;
-  // }
   &_list {
     display: flex;
   }
@@ -115,6 +110,67 @@
   .p-header__nav {
     &_list {
       display: none;
+    }
+  }
+
+  // アコーディオン
+  .p-header__nav__rp {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    display: none;
+    background-color: #fff;
+  }
+
+  .p-header__ac-parent,
+  .p-header__ac-child,
+  .p-header__ac-parent-single {
+    line-height: 2.95;
+    font-weight: bolder;
+    display: block;
+    & a, p {
+      padding: 0 10px;
+      display: block;
+    }
+    & a:hover, p:hover {
+      background-color: #F3FAFB;
+    }
+  }
+
+  .p-header {
+    &__ac-child {
+      display: none;
+      font-weight: 1;
+      padding-left: 16px;
+    }
+  }
+
+  // プラスマーク
+  .p-header {
+    &__ac-parent {
+      position: relative;
+    }
+    &__ac-parent:after,
+    &__ac-parent:before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 13.5px;
+      right: 25px;
+      width: 12.5px;
+      height: 12.5px;
+      border-right: 2px solid #000;
+      border-bottom: 2px solid #000;
+    }
+    &__ac-parent:after {
+      transform: translate(10.5px,10.5px) scale(-1, -1);
+    }
+
+    // オープン時のマイナスマーク
+    &__ac-parent.open:after,
+    &__ac-parent.open:before {
+      border-right: none;
     }
   }
 }
