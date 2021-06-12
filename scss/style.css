@@ -813,6 +813,9 @@ project
     display: none;
     background-color: #fff;
   }
+  .p-header__ac-child {
+    display: none;
+  }
   .p-header__ac-parent,
   .p-header__ac-child,
   .p-header__ac-parent-single {

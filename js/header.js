@@ -14,13 +14,14 @@ $(function(){
   });
 });
 // メニューの中身
-$(function() {
-  $('.p-header__ac-parent').hover(function() {
-    $(this).children('.p-header__ac-child').slideToggle(200);
-    // openクラスをつける
-    $(this).toggleClass("open");
+  $(".p-header__ac-parent").hover(function(){
+    let $subList = $(this).next("ul");
+      if($subList.css("display") == "none"){
+        $subList.slideDown();
+      } else {
+        $subList.slideUp();
+      }
   });
-});
 
 // ハンバーガーボタン
 $(function($){
