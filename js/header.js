@@ -4,7 +4,7 @@ $(function(){
     $(this).children(".p-header__nav_list-sub").stop().slideDown();
   });
   $(".p-header__nav_item").mouseout(function(){
-    $(".p-header__nav_list-sub").stop().slideUp(0);
+    $(".p-header__nav_list-sub").stop().slideUp();
   });
 });
 
@@ -15,12 +15,8 @@ $(function(){
 });
 // メニューの中身
   $(".p-header__ac-parent").hover(function(){
-    let $subList = $(this).next("ul");
-      if($subList.css("display") == "none"){
-        $subList.slideDown();
-      } else {
-        $subList.slideUp();
-      }
+    $(this).find(".p-header__ac-child").slideToggle(150);
+    $(this).toggleClass("open");
   });
 
 // ハンバーガーボタン
