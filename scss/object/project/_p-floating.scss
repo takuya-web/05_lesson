@@ -1,0 +1,42 @@
+.p-floating-button {
+  position: fixed;
+  bottom: 5%;
+  right: 4%;
+  z-index: 20;
+
+  & img {
+    position: absolute;
+    left: 100px;
+    bottom: -10px;
+    width: 60px;
+  }
+
+  &__area {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #A2D729;
+    display: block;
+
+    & a {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      text-align: center;
+      transform: translate(-50%, -50%);
+      line-height: 1.4;
+      font-weight: bolder;
+
+      &::before {
+        content: "";
+        width: 27px;
+        height: 22px;
+        background: url(../../../images/apply.svg);
+        display: inline-block;
+        margin-bottom: 2px;
+      }
+    }
+  }
+}

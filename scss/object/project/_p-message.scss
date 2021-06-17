@@ -22,3 +22,20 @@
     margin: 0 0 16px 0;
   }
 }
+
+@import "../../foundation/responsive";
+
+@media (max-width: $sm) {
+  .p-message {
+    max-height: initial;
+    padding: 64px 10px;
+
+    &__button {
+      margin-top: 20px;
+    }
+
+    &__wrapper {
+      max-width: initial;
+    }
+  }
+}

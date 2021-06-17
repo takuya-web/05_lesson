@@ -75,3 +75,19 @@
     margin-bottom: 25px;
   }
 }
+
+@import "../../foundation/responsive";
+
+@media (max-width: $sm) {
+  .p-impressions__grid {
+    display: block;
+
+    & p {
+      font-size: 14px;
+    }
+  }
+  .p-impressions__item {
+    padding: 15px;
+    margin: 0 0 35px 0;
+  }
+}

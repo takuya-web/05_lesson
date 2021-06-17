@@ -9,11 +9,15 @@
   background-color: #fff;
 }
 
-// レスポンシブ-xl
+// レスポンシブ
 @import "../foundation/responsive";
 
 @media (max-width: $lg) {
+
+}
+
+@media (max-width: $sm) {
   .l-header {
-    height: auto;
+    height: 50px;
   }
 }

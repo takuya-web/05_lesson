@@ -44,3 +44,15 @@
     }
   }
 }
+
+@import "../../foundation/responsive";
+
+@media (max-width: $sm) {
+  .p-movie__area {
+    display: block;
+
+    &-left {
+      margin: 0 0 40px 0;
+    }
+  }
+}

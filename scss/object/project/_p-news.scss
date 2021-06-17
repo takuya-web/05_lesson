@@ -28,15 +28,44 @@
   }
   &__area dd a {
     color: #2498b3;
-    text-decoration: none;
+    text-decoration: underline;
+    transition: all 0.5s;
+  }
+  &__area dd a:hover {
+    background-color: #D4F1F8;
   }
   &__area dd:visited {
     color: #2498b3;
   }
 }
 
-#p-news {
+.p-news {
   &__01 ,&__02 {
     border-bottom: 1px dotted #c3c3c3;
+  }
+}
+
+// レスポンシブ
+@import "../../foundation/responsive";
+
+@media (max-width: $sm) {
+  .p-news__area {
+    font-size: 16px;
+    & dt {
+      border-bottom: none;
+    }
+  }
+
+  .p-news {
+    &__area dt {
+      float: none;
+      font-size: 14px;
+      font-weight: 1.0;
+      padding: 15px 0 0 0;
+      margin: 0 48px 2.8px 0;
+    }
+    &__area dd {
+      padding: 0 0 15px 0;
+    }
   }
 }

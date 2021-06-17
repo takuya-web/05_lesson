@@ -11,13 +11,19 @@ span {
   font-weight: bolder;
 }
 
-// レスポンシブ-xl
+
+
+// レスポンシブ
 @import "../foundation/responsive";
 
-@media (max-width: $xl) {
-  .l-main {
-    &__wrapper {
-      
-    }
+@media (max-width: $lg) {
+  .l-main__wrapper {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: $sm) {
+  .l-main__wrapper {
+    margin: 0 10px;
   }
 }

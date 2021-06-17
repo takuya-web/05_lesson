@@ -17,11 +17,11 @@
     }
   }
 
-  &__border-bottom {
-    border-bottom: 5px solid#2498B3;
-    margin: 20px 0 0 0;
-    display: none;
-  }
+  // &__border-bottom {
+  //   border-bottom: 5px solid#2498B3;
+  //   margin: 20px 0 0 0;
+  //   display: none;
+  // }
 
   &__w1 {
     width: 15.2%;
@@ -102,14 +102,27 @@
   }
 }
 
-// レスポンシブ-lg
+// レスポンシブ
 @import "../../foundation/responsive";
 
 @media (max-width: $lg) {
     
-  .p-price {
-    &__border-bottom {
-      display: block;
+  .p-price__table-scroll {
+    overflow: auto;
+    white-space: nowrap;
+    padding-bottom: 20px;
+
+    &::-webkit-scrollbar {
+      height: 5px;
+    }
+    &::-webkit-scrollbar-track {
+      background: #eeeeee;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #2498B3;
     }
   }
+}
+
+@media (max-width: $sm) {
 }

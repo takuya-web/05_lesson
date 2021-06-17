@@ -5,6 +5,8 @@ foundation
 -------------------------------------------------------- */
 @import "./foundation/reset";
 @import "./foundation/base";
+@import "./foundation/slick";
+@import "./foundation/slick-theme";
 
 /* --------------------------------------------------------
 layout
@@ -36,3 +38,4 @@ project
 @import "./object/project/p-movie";
 @import "./object/project/p-impressions";
 @import "./object/project/p-footer";
+@import "./object/project/p-floating";

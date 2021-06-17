@@ -21,6 +21,9 @@
       font-size: 14px;
     }
   }
+  &__adress {
+    margin: 0 0 0 14px;
+  }
   &__bottom {
     background-color: #fff;
     color: #000;
@@ -61,13 +64,50 @@
   }
 }
 
-// レスポンシブ-lg
+// レスポンシブ
 @import "../../foundation/responsive";
 
 @media (max-width: $lg) {
   .p-footer {
     &__wrapper {
       padding: 40px 10px 30px 10px;
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .p-footer__wrapper {
+    justify-content: center;
+    padding: 27.2px 0 0 0;
+  }
+  .p-footer__site-map {
+    display: none;
+  }
+  .p-footer__logo {
+    flex-direction: column;
+    margin: 0 10px 27.2px 10px;
+    align-items: center;
+    line-height: 1.7;
+    & img {
+      margin: 0;
+    }
+  }
+  .p-footer {
+    &__corporate-name {
+      margin: 12.6px 0 0 0;
+    }
+    &__adress {
+      margin: 9.8px 0 0 0;
+    }
+
+    &__bottom ul {
+      flex-wrap: wrap;
+      padding: 0 10px;
+      margin: 8.4px 0 0 0;
+      line-height: 1.7;
+    }
+    &__terms {
+      margin: 0 18px 8.4px 0;
     }
   }
 }
